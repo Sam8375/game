@@ -146,12 +146,12 @@ const config = {
                 serverCode = js_beautify.js_beautify(uglify.minify(`/* Polyfills and supporting code for bun's runtime */
 globalThis.environmentName = "bun";
 const location = {
-    href: "https://floof.eparker.dev/server/bun.js",
-    hostname: "floof.eparker.dev"
+    href: "https://floof.supercord.lol/server/bun.js",
+    hostname: "floof.supercord.lol"
 };
 const _fetch = fetch;
 fetch = async (...args) => {
-    args[0] = args[0].startsWith("http") ? args[0] : ("https://floof.eparker.dev" + args[0]);
+    args[0] = args[0].startsWith("http") ? args[0] : ("https://floof.supercord.lol" + args[0]);
     const response = await _fetch(...args); 
     const text = await response.text();
     return {
