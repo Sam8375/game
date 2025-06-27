@@ -1,5 +1,4 @@
-export const SERVER_URL = location.protocol + "//" + ((location.hostname === "localhost" || location.hostname.startsWith("10.0.")) ? location.hostname + ":80" : "e2.server.eparker.dev");//"floof-router.glitch.me");
-
+export const SERVER_URL = location.protocol + "//" + ((location.hostname === "localhost" || location.hostname.startsWith("178.79.")) ? location.hostname + ":80" : "routing.floof.supercord.lol");//"floof-router.glitch.me");
 export function lerp(a, b, t) {
     return a + (b - a) * t;
 }
