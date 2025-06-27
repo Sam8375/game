@@ -846,9 +846,9 @@ export const mobConfigs = [
             cooldown: 12,
             health: 12,
             damage: 2,
-            speed: 4,
+            speed: 2,
             range: 50,
-            size: .4,
+            size: .2,
             aimbot: true
         })
         .addDrop(petalIDOf("Square Egg"), .1)

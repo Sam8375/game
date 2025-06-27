@@ -1,3 +1,6 @@
+# Update (6/3/2025)
+- Nerfed tank projectile speed by 50%
+
 # Update (3/4/2025):
 - Updated map editor to fix a few bugs
 - Updated terrain system to use map editor maps
@@ -215,7 +218,7 @@
 - Magnet now grounds Lightning
 - Lightning is now more accurage against players
 - Added angry flowers
-- Added some more support for the modding API, see info at https://floof.eparker.dev/moddingAPI/
+- Added some more support for the modding API, see info at https://floof.supercord.lol/moddingAPI/
 - Added ECONNRESET error handling
 - You now lose some XP when you die
 - Damage Reflection now only reflects the real damage done. For example, if a mob has 8 health remaining and your petal does 25 damage, only 8 damage will be reflected back upon you.
