@@ -577,10 +577,7 @@ export function createServer(name, gamemode, modded, isPrivate, biome) {
             }
 
             worker.onmessage = ({ data }) => {
-                if (socket.readyState !== WebSocket.OPEN) {
-                    return;
-                }
-
+                if (socket.readyState !== WebSocket.OPEN) return;
                 socket.send(data);
             }
 
@@ -940,9 +937,9 @@ export class ClientSocket extends WebSocket {
     }
 
     onOpen() {
-        console.log("Connected to lobby");
+        console.log("Connected to lobby.");
         this.verify(this.username);
-        setTimeout(() => this.ping(), 1E3);
+        setTimeout(() => {this.ping(), console.log("Pinging websocket server.")}, 1E3);
     }
 
     onClose() {
