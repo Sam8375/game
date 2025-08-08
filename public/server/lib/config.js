@@ -11,7 +11,7 @@ export {
 };
 
 export const petalConfigs = [
-    new PetalConfig("Basic", 15, 10, 10)
+    new PetalConfig("Basic", 22.5, 10, 10)
         .setDescription("A simple petal. Not too strong, not too weak."),
     new PetalConfig("Light", 5, 5, 5)
         .setMulti([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 7, 7], 0)
