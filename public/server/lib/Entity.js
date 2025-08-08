@@ -1484,7 +1484,7 @@ class FakeClient {
             }
         }
 
-        let slots = 5 + Math.min(5, Math.floor(this.level / 10));
+        let slots = 5 + Math.min(10, Math.floor(this.level / 20));
         if (slots !== this.slots.length) {
             if (slots > this.slots.length) {
                 for (let i = this.slots.length; i < slots; i++) {
