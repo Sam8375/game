@@ -1531,29 +1531,7 @@ class FakeClient {
 }
 
 export class AIPlayer extends Player {
-    static names = [
-        "Abe", "Abraham", "Adam", "Adrian", "Al", "Alan", "Albert", "Alex", "Alexander", "Alfred", "Allan", "Allen", "Alvin", "Andre",
-        "Andrew", "Andy", "Anthony", "Antonio", "Archie", "Arnold", "Arthur", "Austin", "Barry", "Ben", "Benjamin", "Bernard", "Bill",
-        "Billy", "Bob", "Bobby", "Brad", "Bradley", "Brandon", "Brent", "Brett", "Brian", "Bruce", "Bryan", "Calvin", "Carl", "Cary",
-        "Casey", "Cecil", "Chad", "Charles", "Charlie", "Chester", "Chris", "Christian", "Christopher", "Chuck", "Clarence", "Clifford",
-        "Clint", "Clyde", "Cody", "Colin", "Corey", "Craig", "Curtis", "Dale", "Dan", "Daniel", "Danny", "Darrell", "Darren", "Dave",
-        "David", "Dean", "Dennis", "Derek", "Derrick", "Don", "Donald", "Doug", "Douglas", "Duane", "Dustin", "Dwayne", "Dwight", "Dylan",
-        "Earl", "Ed", "Eddie", "Edgar", "Edward", "Edwin", "Eli", "Eric", "Ernest", "Eugene", "Evan", "Floyd", "Francis", "Frank",
-        "Franklin", "Fred", "Freddie", "Gabriel", "Garry", "Gary", "Gene", "Geoffrey", "George", "Gerald", "Gilbert", "Glen", "Glenn",
-        "Gordon", "Greg", "Gregory", "Guy", "Harold", "Harry", "Harvey", "Henry", "Herbert", "Homer", "Horace", "Howard", "Hugh", "Ian",
-        "Ira", "Isaac", "Jack", "Jacob", "Jake", "James", "Jamie", "Jason", "Jay", "Jeff", "Jeffery", "Jeffrey", "Jeremiah", "Jeremy", "Jerome",
-        "Jerry", "Jesse", "Jim", "Jimmy", "Joe", "Joel", "John", "Johnny", "Jon", "Jonathan", "Jordan", "Jose", "Joseph", "Josh", "Joshua",
-        "Juan", "Julian", "Justin", "Karl", "Keith", "Ken", "Kenneth", "Kenny", "Kent", "Kevin", "Kirk", "Kurt", "Kyle", "Lance", "Larry",
-        "Lawrence", "Lee", "Leo", "Leon", "Leonard", "Leroy", "Leslie", "Lewis", "Lloyd", "Lonnie", "Louis", "Lucas", "Luther", "Marc",
-        "Marcus", "Mario", "Marion", "Mark", "Marshall", "Martin", "Marvin", "Matt", "Matthew", "Maurice", "Max", "Melvin", "Michael",
-        "Micheal", "Mike", "Mitchell", "Nathan", "Nathaniel", "Neil", "Nelson", "Nicholas", "Norman", "Oliver", "Oscar", "Otis", "Patrick",
-        "Paul", "Perry", "Peter", "Phil", "Philip", "Phillip", "Ralph", "Randall", "Randy", "Ray", "Raymond", "Reginald", "Rex", "Richard",
-        "Rick", "Rickey", "Ricky", "Robert", "Rodney", "Roger", "Ron", "Ronald", "Ronnie", "Ross", "Roy", "Russell", "Ryan", "Sam", "Samuel",
-        "Scott", "Sean", "Seth", "Shane", "Shannon", "Shaun", "Shawn", "Sidney", "Stanley", "Stephen", "Steve", "Steven", "Ted", "Terry",
-        "Theodore", "Thomas", "Tim", "Timothy", "Todd", "Tom", "Tommy", "Tony", "Tracy", "Travis", "Troy", "Tyler", "Tyrone", "Vernon",
-        "Victor", "Vincent", "Virgil", "Wade", "Wallace", "Walter", "Warren", "Wayne", "Wesley", "Willard", "William", "Willie", "Zachary",
-        "Zane", "Thot Clapper", "Grim Reaper", "real dev", "fake dev", "the void", "&#*!@$^*&$", "error 404", "ej", "Amara", "Lucifer", "Castiel",
-    ];
+    static names = ["Aether", "Alex", "Awoo", "Banner", "Beel", "Bill", "Cailus", "CarGuy", "Chris3773", "Corrupt Y", "Chris3773", "Dervahl", "Diamond", "Dragontar2008","Dudd", "Etin", "Fax", "Freedom08", "Gigalan", "HaHa", "HotDog356", "Iodine", "Kiddomega21", "Lof", "Manfred", "MarveloButBad", "Mnesia", "Moomooio1", "Nemo", "Nobx", "Otane", "Paper", "Pehiley", "Pepsi", "Poly", "Rog", "Ruby", "Rubix", "Sam8375", "Skare", "Teli", "ViciousOogie", "Wambly"];
 
     constructor(position = { x: 0, y: 0 }, rarity = 0, level = 5) {
         super(position);
@@ -1859,7 +1837,7 @@ export class Mob extends Entity {
 
         if (config.segment) {
             const segmentID = Mob.segmentedLength++;
-            const count = 4 + this.rarity / 1.5 | 0;
+            const count = 3 + this.rarity / 5 | 0;
             let last = this;
 
             this.segmentID = segmentID;
