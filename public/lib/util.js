@@ -25,8 +25,20 @@ export const colors = {
     "super": "#2affa3",
     "ancient": "#ff7b29",
     "omega": "#d966e8",
-    "???": "#333333",
-    "unique": "#FFFFFF",
+    "unique": "#333333",
+    "exotic": "#52cc00",
+    "arcane": "#593e28",
+    "ascendent": "#a7faf4",
+    "supreme": "#751313",
+    "quantumn": "#8a7878",
+    "godly": "#f7c307",
+    "astral": "#0A0440",
+    "eternal": "#408F76",
+    "radiant": "#fff9cc",
+    "void": "#000000",
+    "???": "#362121",
+    "wambly": "#4b0699",
+    "sam": "#024200",
     "account": "#7EEF6D",
     "absorb": "#895adc",
     "skillTree": "#dc5a5a",
@@ -101,7 +113,7 @@ export function formatLargeNumber(number) {
     return (number / 1000000000).toFixed(1) + "b";
 }
 
-const threshold = .6375;
+const threshold = .85;
 
 export function getDropRarity(mobRarity, highestPlayerRarity) {
     const maxRarity = Math.min(9, Math.min(mobRarity, highestPlayerRarity + 1));
