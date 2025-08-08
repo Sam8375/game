@@ -29,11 +29,47 @@ export const tiers = [{
     name: "Omega",
     color: "#d966e8"
 }, {
-    name: "???",
+    name: "Unique",
     color: "#333333"
 }, {
-    name: "Unique",
-    color: "#FFFFFF"
+    name: "Exotic",
+    color: "#52cc00"
+}, {
+    name: "Arcane",
+    color: "#593e28"
+}, {
+    name: "Ascendent",
+    color: "#a7faf4"
+}, {
+    name: "Supreme",
+    color: "#751313"
+}, {
+    name: "Quantum",
+    color: "#8a7878"
+}, {
+    name: "Godly",
+    color: "#f7c307"
+}, {
+    name: "Astral",
+    color: "#0A0440"
+}, {
+    name: "Eternal",
+    color: "#408F76"
+}, {
+    name: "Radiant",
+    color: "#fff9cc"
+}, {
+    name: "Void",
+    color: "#000000"
+}, {
+    name: "???",
+    color: "#362121"
+}, {
+    name: "Wambly",
+    color: "#4b0699"
+}, {
+    name: "Sam",
+    color: "#024200"
 }];
 
 export class PetalTier {
@@ -88,9 +124,9 @@ export class PetalTier {
 }
 
 export class MobTier {
-    static HEALTH_SCALE = 3.15;
-    static DAMAGE_SCALE = 3;
-    static SIZE_SCALE = 1.275;
+    static HEALTH_SCALE = 3.3;
+    static DAMAGE_SCALE = 2.75;
+    static SIZE_SCALE = 1.05;
 
     constructor(tier, health, damage, size) {
         this.health = health * Math.pow(MobTier.HEALTH_SCALE, tier);
@@ -283,7 +319,7 @@ export class PetalConfig {
 
     setExtraSize(extraSize) {
         for (let i = 0; i < this.tiers.length; i++) {
-            this.tiers[i].extraSize = extraSize + Math.pow(1.5, i);
+            this.tiers[i].extraSize = extraSize + Math.pow(1.05, i);
         }
 
         return this;
@@ -340,7 +376,7 @@ export class PetalConfig {
 
     setExtraRange(extraRange) {
         for (let i = 0; i < this.tiers.length; i++) {
-            this.tiers[i].extraRange = extraRange * Math.pow(1.15, i);
+            this.tiers[i].extraRange = extraRange * Math.pow(1.075, i);
         }
 
         return this;
@@ -365,7 +401,7 @@ export class PetalConfig {
 
     setExtraVision(extraVision) {
         for (let i = 0; i < this.tiers.length; i++) {
-            this.tiers[i].extraVision = extraVision * Math.pow(1.5, i);
+            this.tiers[i].extraVision = extraVision * Math.pow(1.18, i);
         }
 
         return this;
@@ -426,7 +462,7 @@ export class PetalConfig {
 
     setExtraPickupRange(extraPickupRange) {
         for (let i = 0; i < this.tiers.length; i++) {
-            this.tiers[i].extraPickupRange = extraPickupRange * Math.pow(1.35, i);
+            this.tiers[i].extraPickupRange = extraPickupRange * Math.pow(1.25, i);
         }
 
         return this;
@@ -447,7 +483,7 @@ export class PetalConfig {
 
     setDensity(density) {
         for (let i = 0; i < this.tiers.length; i++) {
-            this.tiers[i].density = density * Math.pow(1.25, i);
+            this.tiers[i].density = density * Math.pow(1.01, i);
         }
 
         return this;
