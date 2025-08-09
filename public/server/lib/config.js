@@ -889,7 +889,7 @@ mobConfigs[mobIDOf("Ant Hole")].setAntHoleSpawns([{
     count: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 }, {
     index: mobIDOf("Worker Ant"),
-    count: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+    count: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 }, {
     index: mobIDOf("Soldier Ant"),
     count: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
